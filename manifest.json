@@ -1,0 +1,23 @@
+{
+    "name": "Toodoo",
+    "version": "1.0",
+    "manifest_version": 2,
+
+
+    "chrome_url_overrides" : {
+        "newtab": "newTab.html"
+    },
+
+    "icons": {
+        "128": "icon128.png",
+        "48": "icon48.png",
+        "16": "icon16.png"
+    },
+    
+    "permissions": [
+        "storage",
+        // "identity",
+        // "identity.email",
+        "geolocation"
+    ]
+}

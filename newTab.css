@@ -1,0 +1,196 @@
+body {
+    /* background-image: url('https://source.unsplash.com/daily?Wallpapers/1600x900'); */
+    background-image: url('https://source.unsplash.com/collection/162468/daily'); 
+    /* 162468 earth from above 1767181 blanc*/
+    /* background-image: url('https://source.unsplash.com/KMn4VEeEPR8/1600x900'); */
+    /* background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;    */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    opacity: 0.8;
+}
+
+html, body{
+    height: 100%;
+    overflow: hidden;
+}
+
+.todoContainer{
+    height: 30%;
+    width: 400px;
+    background-color: #333333;
+    margin-top: 6%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 3px solid white;
+    border-radius: 5px;
+}
+
+.time{
+    font-size: 110px;
+    color: white;
+    font-weight: 500;
+    text-align: center;
+}
+
+.dateContainer{
+    padding-left: 30%;
+    padding-right: 30%;
+    font-size: x-large;
+    font-weight: bold;
+    color: white;
+    margin-top: 8%;
+}
+
+.date{
+    width: 50%;
+    float: left;
+}
+
+.day{
+    width: 50%;
+    float: right;
+    text-align: end;
+}
+
+.greet{
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+}
+
+.searchContainer {
+    width: 50%;
+    position: relative;
+    display: flex;
+    margin: auto;
+  }
+
+.searchTerm {
+    width: 100%;
+    border-right: none;
+    padding: 5px;
+    height: 20px;
+    border-radius: 10px;
+    outline: none;
+    color: grey;
+}
+
+.searchTerm:focus{
+    color: rgb(1, 15, 17);
+}
+
+.searchButton {
+    width: 32px;
+    height: 32px;
+    border: 0px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 20px;
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAABbElEQVRIia2VsU4CQRRFnxRYiJ02LIWFPX/gZ4DaaaEGkIoGO39LQoyCrVba0GgBaAy9SrLHwrvJSnB2RvY1s5m99515M/tmzRYC2ATaQB+YAF8a+8A5UFr0eAewD7zhjleg9p/kF0CsJLdAHSgDRSASfKD3MdANXXkMzIGzDG1DutirEu15si3O5AsQgGnmmehAAW58kqd8Q/laWcK+hPVAwIF8vSzhRMJyICCSb5wl/JSwGAhYl+/DpSuY2UzPWyEAM9vWOHOJCmb2pOe9QECif3Sq1P4AA9/MwBpwJ18zS1xS+wM0PAEt7z6QoZbqZCdEyecCdHwWlBi7qbtoqO+8oruoAhymtiWJd6AaAqmpbFdMgY6SJ5Bj4NKrl3QmTaAHjNUnY+BK8xvSVVOQJEZAxbsij8UcLanwF6SwImNnydyumV3nUgk/P6TRH2c1AqI8IJEDcr8yIAPykgvAATnJDZCCPADPwKmZ2TdWELCQQJ/4TwAAAABJRU5ErkJggg==");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin-left: 8px;
+}
+
+.memoContainer{
+    width: 50%;
+    float: left;
+    position: relative;
+    height: 300px;
+}
+
+.memo{
+    outline: none;	
+    resize: none;
+    background-color: black;
+    color: white;
+    border: black solid 3px;
+    border-radius: 8px;
+    margin-left: 2%;
+    bottom: 20%;
+    position: absolute;
+    opacity: 0;
+}
+
+.memoLbl{
+    background: black;
+    border: black solid 5px;
+    border-radius: 8px;
+    text-align: center;
+    width: 100px;
+    font-size: large;
+    font-weight: 500;
+    color: white;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.todoWrapper{
+    background: black;
+    color: white;
+    width: 43%;
+    float: right;
+    border: black solid 5px;
+    margin-right: 2%;
+    opacity: 0.8;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 20%;
+    right: 0;
+    opacity: 0;
+}
+
+.todoHeader{
+    font-size: xx-large;
+    width: 26%;
+}
+
+.todoList{
+    font-size: medium;
+    list-style-type: none;
+    padding-left: 2%;
+}
+
+.todoLi{
+    border: grey solid;
+    border-width: 0 0 1px 0;
+}
+
+.addTodo{
+    background: black;
+    color: white;
+    font-size: x-large;
+    border: none;
+    cursor: pointer;
+}
+
+.newTodo{
+    background: black;
+    border: none;
+    font-size: x-large;
+    color: white;
+    width: 95%;
+    padding-left: 2px;
+}
+
+.newTodo:focus{
+    outline: none;
+}
+
+.todoBtn{
+    background: black;
+    border: black solid 5px;
+    border-radius: 5px;
+    text-align: center;
+    width: 100px;
+    font-size: large;
+    font-weight: 500;
+    color: white;
+    opacity: 0.8;
+    cursor: pointer;
+    float: right;
+}

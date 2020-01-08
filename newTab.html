@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>New Tab</title>
+        <script src="jquery-3.4.1.min.js"></script>
+        <script src="newTab.js"></script>
+        <link rel="stylesheet" type="text/css" href="newTab.css">
+    </head>
+
+    <body>
+        
+        <div>
+            <div class='dateContainer'>
+                <div id = "date" class='date'></div>
+                <div id = 'day' class="day"></div>
+            </div>
+        </div>
+        <div id="time" class='time'></div>
+        <h2 id="greet" class="greet"></h2>
+        <div class="searchContainer">
+            <input type='text' id="search" class="searchTerm" placeholder="Search">
+            <button type="submit" id="searchBtn" class="searchButton"></button>
+        </div>
+
+        <div>
+            <div class='memoContainer'>
+                <textarea id="memo" class='memo' rows="13" cols="40"></textarea>
+                <div style="position: absolute; bottom: 7%;">
+                    <button type='button' id="memoLbl" class="memoLbl">+ MEMO</button>
+                </div>
+            </div>
+
+            <div class='memoContainer' style="width: 50%; float: right;">
+                <div id = 'todoWrapper' class="todoWrapper">
+                    <div>
+                        <div id="todoHeader" class="todoHeader">Todo</div>
+                        <div>Completed tasks will be removed tomorrow</div>    
+                    </div>
+                    
+                    <ol id="todoList" class="todoList">
+                        <!-- <li class="todoLi" id="coffee"><input type="checkbox" id="cbcoffee">Coffee</li>
+                        <li class="todoLi"><input type="checkbox">Tea</li>
+                        <li class="todoLi"><input type="checkbox">Milk</li> -->
+                    </ol>
+                    <div>
+                        <button class="addTodo" id="addTodo">+ Add</button>
+                        <input type="text" id="newTodo" class="newTodo" placeholder="New Todo">
+                    </div>
+                    
+                </div>
+
+                <div style="position: absolute; bottom: 7%; right: 0">
+                    <button type='button' id="todoBtn" class="todoBtn">+ TODO</button>
+                </div>
+            </div>
+        </div>
+        
+
+        
+        
+    </body>
+</html>
